@@ -1,6 +1,9 @@
 package com.devsuperior.dsmeta.repositories;
 
-public interface SaleRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
 
-	public static final Double test = null;
+import com.devsuperior.dsmeta.entities.Sale;
+
+public interface SaleRepository extends JpaRepository<Sale, Long> {
+
 }
